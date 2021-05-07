@@ -4,6 +4,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Header from "./Header"
 import Sidebar from './Sidebar';
 import PostList from "./PostList"
+import PostEdit from "./PostEdit"
+import Post from "./Post"
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
@@ -13,10 +15,13 @@ const useStyles = makeStyles((theme) => ({
 function App() {
   const classes = useStyles();
   return (
+
     <div className={classes.root}>
-    <Header />
+    {/*<Header />
     <Sidebar />
-    <PostList />
+    <PostList /
+    <PostEdit />*/}
+    <Post />
   </div>
 );
 }
